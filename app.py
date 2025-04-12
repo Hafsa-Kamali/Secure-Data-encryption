@@ -10,7 +10,7 @@ DATA_FILE = "data.json"
 KEY_FILE = "secret.key"
 LOGO_PATH = "logo.png"
 # Add background image path
-BG_IMAGE = "image.jpg"  # Make sure this file exists in your directory
+BG_IMAGE = "image3.jpg"  # Make sure this file exists in your directory
 
 # ---------- Key Management ----------
 def load_key():
@@ -79,7 +79,7 @@ def register_user(username, password):
     return False
 
 # ---------- Session State Initialization ----------
-st.set_page_config(page_title="🔐 Secure Data Vault", layout="centered")
+st.set_page_config(page_title="🔐 IronSafe Systems", layout="centered")
 
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
@@ -99,7 +99,6 @@ def set_background():
         <style>
         .stApp {{
             background-image: 
-             linear-gradient(to top, rgba(14, 17, 23, 0.2), rgba(14, 17, 23, 0.2)),
             url("data:image/jpg;base64,{get_base64_encoded_image(BG_IMAGE)}");
             background-size: cover;
             background-position: center;
